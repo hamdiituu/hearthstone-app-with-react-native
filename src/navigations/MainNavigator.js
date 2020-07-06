@@ -5,7 +5,7 @@ const Stack = createStackNavigator();
 
 const MainNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Main" >
       <Stack.Screen name="Main" component={MainScreen} />
       <Stack.Screen name="CardDetail" component={CardDetailScreen} />
       <Stack.Screen name="CardSearch" component={CardSearchScreen} />

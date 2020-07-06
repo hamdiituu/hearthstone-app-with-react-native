@@ -4,6 +4,7 @@ import * as Constants from './Constants';
 //Common req-res model
 
 const axiosBase = axios.create({
+  
   baseURL: Constants.BASE_URL,
   headers: Constants.API_HEADER,  //standart header
 });
