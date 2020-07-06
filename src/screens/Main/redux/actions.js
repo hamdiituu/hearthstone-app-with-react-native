@@ -6,21 +6,21 @@ export const fetchAllCards = () => {
     const url = '/cards';
 
     return get(url)
-      .then(({ data, status }) => {
+      .then(({data, status}) => {
         if (status !== 200) {
           throw data;
         }
 
         dispatch({
           type: types.FETCH_ALL_CARD_SUCCESS,
-          payload: data
+          payload: data,
         });
       })
       .catch(error => {
         dispatch({
           type: types.FETCH_ALL_CARD_FAILURE,
-          payload: error
+          payload: error,
         });
       });
-  }
+  };
 };
