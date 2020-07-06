@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const CardDetailScreen  =()=>{
+const CardSearchScreen  =()=>{
     return(
         <View>
-            <Text>Card Detail Screen</Text>
+            <Text>Card Search Screen</Text>
         </View>
     )
 }
 
-export default CardDetailScreen;
+export default CardSearchScreen;
